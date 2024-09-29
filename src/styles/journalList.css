@@ -1,0 +1,6 @@
+.journal-entry-list {
+  display: flex;                      /* Use flexbox layout */
+  flex-wrap: wrap;                   /* Allow items to wrap onto the next line */
+  gap: 1.5rem;                       /* Space between entries */
+  justify-content: center;           /* Center items horizontally */
+}

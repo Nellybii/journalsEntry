@@ -1,0 +1,63 @@
+/* SignUp.css */
+
+.container {
+    max-width: 900px;
+    margin-top: 4rem;
+    padding: 2rem;
+    border: 1px solid #e2e8f0; /* Light border */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: #f9fafb; /* Light background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600; /* Bold labels */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1; /* Light gray border */
+    border-radius: 0.25rem; /* Slightly rounded */
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #2563eb; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 600; /* Bold button text */
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .error {
+    color: #ef4444; /* Red color for errors */
+    margin-bottom: 1rem;
+  }
+  

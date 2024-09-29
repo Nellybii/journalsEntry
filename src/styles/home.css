@@ -1,0 +1,153 @@
+/* Home Page Styles */
+.container {
+    max-width: 100%;
+    margin-left: 10px; /* Center the container */
+  }
+  
+  .flex-grow {
+    flex: 3; /* Allow the main content to grow */
+  }
+  
+  .text-center {
+    text-align: center; /* Center text */
+  }
+  
+  .mb-16 {
+    margin-bottom: 4rem; 
+  }
+  
+  .text-5xl {
+    font-size: 3rem; /* Large heading */
+  }
+  
+  .font-extrabold {
+    font-weight: 800; /* Bold font weight */
+  }
+  
+  .text-gray-800 {
+    color: #084e80; /* Dark gray text */
+  }
+  
+  .text-lg {
+    font-size: 1.125rem; /* Medium-sized text */
+  }
+  
+  .text-gray-600 {
+    color: #719687; /* Lighter gray text */
+  }
+  
+  .flex {
+    display: flex; /* Flexbox layout */
+  }
+  
+  .justify-center {
+    justify-content: center; /* Center flex items */
+  }
+  
+  .bg-blue-500 {
+    background-color: #4299e1; /* Blue background */
+  }
+  
+  .bg-blue-600 {
+    background-color: #3182ce; /* Darker blue on hover */
+  }
+  
+  .text-white {
+    color: white; /* White text */
+  }
+  
+  .px-6 {
+    padding-left: 1.5rem; /* Horizontal padding */
+    padding-right: 1.5rem; /* Horizontal padding */
+  }
+  
+  .py-3 {
+    padding-top: 0.75rem; /* Vertical padding */
+    padding-bottom: 0.75rem; /* Vertical padding */
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem; /* Rounded corners */
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .hover\:bg-blue-600:hover {
+    background-color: #3182ce; /* Change to darker blue on hover */
+  }
+  
+  .transition {
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  .duration-300 {
+    transition-duration: 300ms; /* Transition duration */
+  }
+  
+  .ease-in-out {
+    transition-timing-function: ease-in-out; /* Timing function for transition */
+  }
+  
+  .grid {
+    display: grid; /* Grid layout */
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr); /* 1 column layout */
+  }
+  
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout on medium screens */
+  }
+  
+  .gap-8 {
+    gap: 2rem; /* Space between grid items */
+  }
+  
+  .bg-white {
+    background-color: #ffffff; /* White background for cards */
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem; /* Rounded corners */
+  }
+  
+  .p-6 {
+    padding: 1.5rem; /* Padding inside cards */
+  }
+  
+  .transition-transform {
+    transition: transform 0.3s ease; /* Transition for scaling effect */
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05); /* Scale up effect on hover */
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem; /* Medium-large heading */
+  }
+  
+  .font-bold {
+    font-weight: bold; /* Bold font weight */
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem; /* Space below the heading in cards */
+  }
+  
+  /* Image Styling */
+  .img-responsive {
+    max-width: 60%; /* Ensure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .img-responsive:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  

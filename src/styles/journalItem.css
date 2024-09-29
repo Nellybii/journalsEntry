@@ -1,0 +1,14 @@
+.journal-entry {
+  background-color: white;           /* Background color */
+  border: 1px solid #d1d5db;        /* Light gray border */
+  border-radius: 0.5rem;            /* Rounded corners */
+  padding: 1.5rem;                   /* Inner spacing */
+  margin-bottom: 1.5rem;             /* Spacing between entries */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s;        /* Smooth scaling effect */
+  flex: 1 1 300px;                  /* Flex properties: grow, shrink, base size */
+}
+
+.journal-entry:hover {
+  transform: scale(1.02);            /* Slightly scale up on hover */
+}

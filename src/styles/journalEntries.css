@@ -1,0 +1,82 @@
+
+.container {
+    max-width: 300%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+  
+  h2 {
+    color: #2c3e50; 
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .border {
+    border: 1px solid #dcdcdc; /* Light border for journal entry */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .border:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+  }
+  
+  .text-xl {
+    font-size: 1.25rem; /* Font size for entry title */
+    color: #2980b9; /* Blue color for entry title */
+  }
+  
+  .text-gray-600 {
+    color: #7f8c8d; /* Gray color for secondary text */
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* Margin bottom for spacing */
+  }
+  
+  .rounded {
+    border-radius: 8px; /* Consistent rounded corners */
+  }
+  
+  .p-4 {
+    padding: 1rem; /* Padding inside the entry box */
+  }
+  
+  .bg-blue-500 {
+    background-color: #3498db; /* Blue color for buttons */
+  }
+  
+  .bg-green-500 {
+    background-color: #2ecc71; /* Green color for buttons */
+  }
+  
+  .bg-gray-500 {
+    background-color: #95a5a6; /* Gray color for buttons */
+  }
+  
+  .text-white {
+    color: white; /* White text for buttons */
+  }
+  
+  .text-center {
+    text-align: center; /* Center text for buttons */
+  }
+  
+  .category {
+    display: grid; /* Use grid layout for the buttons */
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr); /* One column for small screens */
+  }
+  
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium and larger screens */
+  }
+  
+  .gap-4 {
+    gap: 1rem; /* Gap between grid items */
+  }
+  
