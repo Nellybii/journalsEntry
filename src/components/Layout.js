@@ -1,10 +1,9 @@
 import React from 'react';
-import '../styles/footer.css'; // Import the footer CSS file
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="container">
+    <footer className="bg-gray-800 text-white py-4 mt-auto">
+      <div className="container mx-auto text-center">
         <p>© 2024 Journal App. All rights reserved.</p>
       </div>
     </footer>

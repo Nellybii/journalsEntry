@@ -1,0 +1,31 @@
+/* footer.css */
+
+/* Ensure the footer is always at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Default font family */
+  }
+  
+  #root {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in a column */
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  footer {
+    background-color: #2d3748; /* Dark background color for the footer */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Vertical padding for footer */
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%; /* Make sure it spans full width */
+  }
+  
+  /* Optional: Style for container inside footer */
+  footer .container {
+    max-width: 1200px; /* Set a max width for your footer content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Horizontal padding */
+  }
+  

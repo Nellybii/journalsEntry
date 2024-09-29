@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom'; // Import Link for navigation
+import { useNavigate, Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import api from '../utils/utils'; // Import your Axios instance
 
@@ -19,19 +19,18 @@ const Login = () => {
     try {
       const response = await api.post('/token/', { username, password });
       const token = response.data.access; // Get the token directly from access
+
       if (token) {
         localStorage.setItem('token', token); 
         login(token);
         alert('Login successful');
-        navigate('/journal-entries'); // Navigate to journal entries
+        navigate('/dashboard'); 
       } else {
         alert('Token not received. Please check your credentials.');
       }
     } catch (err) {
-      const errorMessage = typeof err.response?.data?.message === 'string' 
-        ? err.response.data.message 
-        : 'An error occurred. Please try again.';
-      alert(errorMessage);
+      const errorMessage = err.response?.data?.message || 'An error occurred. Please try again.';
+      setError(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -64,7 +63,7 @@ const Login = () => {
         </div>
         <button 
           type="submit" 
-          className={`bg-blue-500 text-white px-4 py-2 rounded ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`bg-blue-500 text-white px-4 py-2 rounded transition duration-200 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
           disabled={loading}
         >
           {loading ? 'Logging In...' : 'Log In'}

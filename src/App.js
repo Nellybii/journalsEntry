@@ -32,7 +32,7 @@ const Main = () => {
         <Route path="/login" element={<Login />} />
 
         {/* Protected Routes */}
-        <Route path="/dashboard" element={authToken ? <Dashboard /> : <Navigate to="/login" />} />
+        <Route path="/dashboard" element={authToken ? <Dashboard /> : <Navigate to="/dashboard" />} />
         <Route path="/journal-entries" element={authToken ? <JournalEntries /> : <Navigate to="/login" />} />
         <Route path="/journal-entries/add" element={authToken ? <AddJournalEntry /> : <Navigate to="/journal-entries" />} />
         <Route path="/journal-entries/edit/:id" element={authToken ? <EditJournalEntry /> : <Navigate to="/login" />} />
