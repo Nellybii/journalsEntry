@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Import Link for navigation
 import '../styles/register.css';
 import api from '../utils/utils';
 
@@ -42,13 +42,12 @@ const SignUp = () => {
       const errorMessage = typeof err.response?.data?.message === 'string' 
         ? err.response.data.message 
         : JSON.stringify(err.response?.data || { message: 'An error occurred' });
-        alert(errorMessage);
+      alert(errorMessage);
     } finally {
       setLoading(false);
     }
   };
   
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
@@ -97,6 +96,15 @@ const SignUp = () => {
           {loading ? 'Signing Up...' : 'Sign Up'}
         </button>
       </form>
+      
+      <div className="mt-4">
+        <p className="text-gray-600">
+          Already have an account?{' '}
+          <Link to="/login" className="text-blue-500 underline">
+            Log in here
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };

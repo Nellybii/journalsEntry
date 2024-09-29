@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate, Link } from 'react-router-dom'; // Import Link for navigation
 import AuthContext from '../context/AuthContext';
 import api from '../utils/utils'; // Import your Axios instance
 
@@ -70,6 +70,14 @@ const Login = () => {
           {loading ? 'Logging In...' : 'Log In'}
         </button>
       </form>
+      <div className="mt-4">
+        <p className="text-gray-600">
+          Don't have an account?{' '}
+          <Link to="/signup" className="text-blue-500 underline">
+            Register here
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };
