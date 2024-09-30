@@ -9,6 +9,7 @@ import JournalEntries from './pages/JournalEntries';
 import AddJournalEntry from './pages/AddJournalEntry';
 import Settings from './pages/Settings';
 import EditJournalEntry from './pages/EditJounal';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const Main = () => {
   const { authToken } = useAuth(); // Access the auth context
 
   return (
+    <div>
     <div className="flex flex-col min-h-screen">
       <Routes>
         {/* Public Routes */}
@@ -39,6 +41,11 @@ const Main = () => {
         <Route path="/settings" element={authToken ? <Settings /> : <Navigate to="/login" />} />
       </Routes>
     </div>
+    <div>
+      <Footer />
+    </div>
+    </div>
+    
   );
 };
 

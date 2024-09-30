@@ -9,7 +9,7 @@ const CategoryDashboard = () => {
   const navigate = useNavigate(); // Updated to useNavigate for navigation
 
   const handleAddCategory = (newCategory) => {
-    setCategories([...categories, newCategory]);
+    setCategories([...categories, { ...newCategory, id: Date.now() }]); // Add unique ID
     setShowForm(false); // Hide form after submission
   };
 
@@ -69,8 +69,8 @@ const CategoryDashboard = () => {
         <div className="categories-list">
           <h2 className="categories-title">Your Categories</h2>
           <ul className="categories-ul">
-            {categories.map((category, index) => (
-              <li key={index} className="category-item">{category.name}</li>
+            {categories.map((category) => (
+              <li key={category.id} className="category-item">{category.name}</li>
             ))}
           </ul>
         </div>

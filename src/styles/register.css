@@ -8,6 +8,7 @@
     border-radius: 0.5rem; /* Rounded corners */
     background-color: #f9fafb; /* Light background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-top: 80px;
   }
   
   h2 {
