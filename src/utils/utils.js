@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://journaling-appfe.onrender.com',
+  baseURL: 'https://journaling-appfe-2.onrender.com',
   timeout: 5000,
 });
 
